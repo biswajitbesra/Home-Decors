@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sedan", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ededed;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* NAVBAR START */
+.navbar{
+    padding: 1.3rem 0;
+    background-color: white;
+}
+.navbar .container-xxl .nav-logo span{
+    padding: 0 .35rem;
+    border-radius: .4rem;
+    color: white;
+    background-color: red;
+    font-size: 1.35rem;
+}
+.navbar .nav-text, .nav-logo{
+    font-size: 1.35rem;
+}
+.navbar .nav-text:hover{
+    color: red;
+}
+.navbar .nav-item .nav-contact{
+    color: red;
+}
+.navbar .icon{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.navbar .icon a{
+    color: #000;
+}
+.navbar .icon a:hover{
+    color: red;
+}
+/* NAVBAR END */
+/* CONTACT SECTION */
+.contact {
+    padding: 3rem 0;
+}
+
+.contact .heading {
+    text-align: center;
+}
+
+.content-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container .send-message,
+.address-detail {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container .send-message .message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container .send-message .message-form h3,
+.email-input,
+textarea {
+    margin-bottom: .9rem;
+}
+
+.content-container .send-message .message-form h3 {
+    font-size: 1.5rem;
+}
+
+.content-container .send-message .message-form .email-input,
+textarea{
+    padding: 0 1rem;
+    border-radius: .4rem;
+    outline: none;
+    border: 1px solid #9d9d9deb;
+    background-color: #f4f4f4;
+    font-size: .8rem;
+}
+
+.content-container .send-message .message-form .email-input{
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.content-container .send-message .message-form textarea {
+    padding-top: .5rem;
+    height: 8rem;
+    width: 20rem;
+}
+
+.content-container .send-message .message-form button {
+    height: 2.5rem;
+    width: 100%;
+    font-size: .9rem;
+    color: white;
+    border-radius: 2rem;
+    background-color: black;
+}
+.address-detail .address, .number, .sale-support {
+    margin: 1.5rem 0;
+}
+.address-detail span{
+    font-size: 1.3rem;
+}
+
+.address-detail p{
+    padding-top: .5rem;
+    font-size: .9rem;
+}
+.address-detail .info-container .color-black{
+    color: #000;
+}
+.address-detail .info-container .color-blue {
+    color: #5f9ac7;
+}
+/* CONTACT SECTION */
+/* FOOTER SECTION */
+.footer{
+    padding: 2rem 2rem .5rem 2rem;
+    background-color: black;
+}
+.footer .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer h4{
+    margin-bottom: .8rem;
+    color: #ffffff; 
+}
+.footer ul{
+    padding: 0;
+}
+.footer ul li{
+    margin-bottom: .2rem;
+    list-style: none;
+}
+.footer .sec a,p{
+    color: #ffffff; 
+    text-decoration: none;
+}
+.sec ul li,h4{
+    text-align: center;
+}
+.footer .sec, .location{
+    width: 14rem;
+}
+.footer .copy-right p{
+    margin: 0;
+    text-align: center;
+    color: #ffffff; 
+}
+.footer .info .social a{
+    color: #ffffff;
+    margin-right: .7rem;
+}
+.footer hr{
+    color: #ffffff;
+}
+/* FOOTER SECTION */

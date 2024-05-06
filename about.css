@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sedan", serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ededed;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* NAVBAR START */
+.navbar{
+    padding: 1.3rem 0;
+    background-color: white;
+}
+.navbar .container-xxl .nav-logo span{
+    padding: 0 .35rem;
+    border-radius: .4rem;
+    color: white;
+    background-color: red;
+    font-size: 1.35rem;
+}
+.navbar .nav-text, .nav-logo{
+    font-size: 1.35rem;
+}
+.navbar .nav-text:hover{
+    color: red;
+}
+.navbar .nav-item .nav-about{
+    color: red;
+}
+.navbar .icon{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.navbar .icon a{
+    color: #000;
+}
+.navbar .icon a:hover{
+    color: red;
+}
+/* NAVBAR END */
+
+/* ABOUT START */
+.about{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+.about .heading{
+    text-align: center;
+}
+.about .container-content {
+    background-color: white;
+    padding: 3rem 7.5rem;
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+.about .container-content .border{
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* ABOUT END */
+
+
+/* FOOTER START */
+.footer{
+    padding: 2rem 2rem .5rem 2rem;
+    background-color: black;
+}
+.footer .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer h4{
+    margin-bottom: .8rem;
+    color: #ffffff; 
+}
+.footer ul{
+    padding: 0;
+}
+.footer ul li{
+    margin-bottom: .2rem;
+    list-style: none;
+}
+.footer .sec a,p{
+    color: #ffffff; 
+    text-decoration: none;
+}
+.sec ul li,h4{
+    text-align: center;
+}
+.footer .sec, .location{
+    width: 14rem;
+}
+.footer .copy-right p{
+    margin: 0;
+    text-align: center;
+    color: #ffffff; 
+}
+.footer .info .social a{
+    color: #ffffff;
+    margin-right: .7rem;
+}
+.footer hr{
+    color: #ffffff;
+}
+/* FOOTER END */
