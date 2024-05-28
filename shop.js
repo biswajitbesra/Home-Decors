@@ -44,41 +44,33 @@ allBtn.addEventListener("click", () => {
     for (i = 0; i < type.length; i++) {
         pWrapClass[i].classList.add("show");
     }
-    setActiveBtn("All");
 });
 
 chairBtn.addEventListener("click", () => {
     filterProduct("Chair");
-    setActiveBtn("Chair");
 });
 
 sofaBtn.addEventListener("click", () => {
     filterProduct("Sofa");
-    setActiveBtn("Sofa");
 });
 
 lampBtn.addEventListener("click", () => {
     filterProduct("Lamp");
-    setActiveBtn("Lamp");
 });
 
 tableBtn.addEventListener("click", () => {
     filterProduct("Table");
-    setActiveBtn("Table");
 });
 
 sideboardBtn.addEventListener("click", () => {
     filterProduct("Sideboard");
-    setActiveBtn("Sideboard");
 });
 
 wallDecorBtn.addEventListener("click", () => {
     filterProduct("Wall Decor");
-    setActiveBtn("Wall Decor");
 });
 plantBtn.addEventListener("click", () => {
     filterProduct("Plant");
-    setActiveBtn("Plant");
 });
 
 
