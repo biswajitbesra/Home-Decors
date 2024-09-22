@@ -119,9 +119,6 @@ body::-webkit-scrollbar{
 /* DISCOUNT END */
 
 /* NEW ARRIVAL/WEEKLY DEALS SECTION START */
-.product-image .image img{
-    height: 20rem;
-}
 .product-image .view, .wishlist{
     opacity: 0;
 }
@@ -632,7 +629,7 @@ body::-webkit-scrollbar{
     }
 }
 @media (max-width:768px) {
-    .row{
+    .dis-row{
         justify-content: center;
     }
     #custom-cards{
@@ -668,7 +665,7 @@ body::-webkit-scrollbar{
         font-size: 2.1rem;
     }
     .card-size{
-        width: 48.5vh;
+        width: 45%;
     }
 }
 @media (max-width:595px) {
@@ -720,9 +717,18 @@ body::-webkit-scrollbar{
         text-decoration: underline;
     }
 }
+@media (max-width:575px) {
+    .cus-container{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
 @media (max-width:515px) {
     .carousel-inner .carousel-item .third-carousel{
         width: 20rem;
+    }
+    .product-image .image{
+        height: 18rem;
     }
 }
 @media (max-width:450px) {
@@ -752,10 +758,16 @@ body::-webkit-scrollbar{
     .card-size .card-info .dis-btn{
         font-size: calc(1.25rem - 20%);
     }
+    .product-image .image{
+        height: 16rem;
+    }
 }
 @media (max-width:420px) {
     .carousel-inner .carousel-item .third-carousel{
         width: 14.5rem;
+    }
+    .product-image .image{
+        height: 15rem;
     }
 }
 @media (max-width:390px) {
@@ -767,6 +779,9 @@ body::-webkit-scrollbar{
     }
     .carousel-text .first-text, .second-text, .third-text{
         font-size: 1.7rem;
+    }
+    .product-image .image{
+        height: 14rem;
     }
 }
 @media (max-width:375px) {
@@ -795,5 +810,8 @@ body::-webkit-scrollbar{
     }
     .card-size .card-info .dis-btn{
         font-size: calc(1.25rem - 30%);
+    }
+    .product-image .image{
+        height: 13rem;
     }
 }
