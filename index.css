@@ -95,12 +95,25 @@ body::-webkit-scrollbar{
 /* CAROUSEL END */
 
 /* DISCOUNT START */
+#custom-cards{
+    padding: 3rem 2rem 0rem 2rem;
+}
+.card-size .card-info{
+    width: 9rem
+}
+.card-size .card-info .card-heading{
+    font-size: 1.75rem;
+}
+.card-size .card-info .card-dis{
+    font-size: .875rem;
+}
 .card-size div img{
     width: 100%;
     height: auto;
 }
 .card-size .dis-btn{
     color: #000;
+    font-size: 1.25rem;
     text-decoration: underline;
 }
 /* DISCOUNT END */
@@ -489,6 +502,20 @@ body::-webkit-scrollbar{
         font-size: 3.2rem;
         margin-bottom: 0;
     }
+    .card-size .card-info{
+        width: 8rem;
+    }
+    .card-size .card-info .card-heading{
+        font-size: calc(1.75rem - 20%);
+        margin-bottom: .25rem;
+    }
+    .card-size .card-info .card-dis{
+        font-size: calc(.875rem - 20%);
+        margin-bottom: .5rem;
+    }
+    .card-size .card-info .dis-btn{
+        font-size: calc(1.25rem - 20%);
+    }
 }
 @media (max-width: 1160px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -589,6 +616,29 @@ body::-webkit-scrollbar{
     .first-para, .second-para, .third-para{
         display: none;
     }
+    .card-size .card-info{
+        width: 6.5rem;
+    }
+    .card-size .card-info .card-heading{
+        font-size: calc(1.75rem - 40%);
+        margin-bottom: .125rem;
+    }
+    .card-size .card-info .card-dis{
+        font-size: calc(.875rem - 20%);
+        margin-bottom: .25rem;
+    }
+    .card-size .card-info .dis-btn{
+        font-size: calc(1.25rem - 35%);
+    }
+}
+@media (max-width:768px) {
+    .row{
+        justify-content: center;
+    }
+    #custom-cards{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (max-width: 750px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -617,6 +667,9 @@ body::-webkit-scrollbar{
     .carousel-text .first-text, .second-text, .third-text{
         font-size: 2.1rem;
     }
+    .card-size{
+        width: 48.5vh;
+    }
 }
 @media (max-width:595px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -644,6 +697,28 @@ body::-webkit-scrollbar{
     .carousel-text .shop-now span{
         display: none;
     }
+    #custom-cards{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .card-size{
+        width: initial;
+    }
+    .card-size .card-info{
+        width: 9rem
+    }
+    .card-size .card-info .card-heading{
+        font-size: 1.75rem;
+    }
+    .card-size .card-info .card-dis{
+        font-size: .875rem;
+    }
+    .card-size .card-info .dis-btn{
+        color: #000;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
 }
 @media (max-width:515px) {
     .carousel-inner .carousel-item .third-carousel{
@@ -662,6 +737,20 @@ body::-webkit-scrollbar{
     }
     .carousel-text .first-text, .second-text, .third-text{
         font-size: 1.8rem;
+    }
+    .card-size .card-info{
+        width: 8rem;
+    }
+    .card-size .card-info .card-heading{
+        font-size: calc(1.75rem - 20%);
+        margin-bottom: .25rem;
+    }
+    .card-size .card-info .card-dis{
+        font-size: calc(.875rem - 20%);
+        margin-bottom: .5rem;
+    }
+    .card-size .card-info .dis-btn{
+        font-size: calc(1.25rem - 20%);
     }
 }
 @media (max-width:420px) {
@@ -692,5 +781,19 @@ body::-webkit-scrollbar{
     }
     .carousel-text .first-text, .second-text, .third-text{
         font-size: 1.5rem;
+    }
+    .card-size .card-info{
+        width: 6.5rem;
+    }
+    .card-size .card-info .card-heading{
+        font-size: calc(1.75rem - 50%);
+        margin-bottom: .125rem;
+    }
+    .card-size .card-info .card-dis{
+        font-size: calc(.875rem - 20%);
+        margin-bottom: .25rem;
+    }
+    .card-size .card-info .dis-btn{
+        font-size: calc(1.25rem - 30%);
     }
 }
