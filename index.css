@@ -339,15 +339,12 @@ body::-webkit-scrollbar{
 /* MODAL SECTION END */
 
 /* INVENTORY SECTION START */
-.custom-div {
-    height: 320px;
-    width: 530px;
-}
 .custom-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 320px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -360,7 +357,7 @@ body::-webkit-scrollbar{
 .custom-image:hover img{
     transform: scale(1.1);
 }
-.custom-div .custom-image .text-overlay {
+.custom-image .text-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -377,7 +374,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
 }
-.custom-div .custom-image .text-overlay .inventory-view{
+.custom-image .text-overlay .inventory-view{
     border: .06rem solid white;
     color: #fff;
     border-radius: .5rem;
@@ -385,7 +382,7 @@ body::-webkit-scrollbar{
     background-color: transparent;
     transition: all .3s ease-in-out;
 }
-.custom-div .custom-image .text-overlay .inventory-view:hover{
+.custom-image .text-overlay .inventory-view:hover{
     color: white;
     background-color: black;
     border: .06rem solid black;
