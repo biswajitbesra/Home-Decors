@@ -119,9 +119,6 @@ body::-webkit-scrollbar{
 /* DISCOUNT END */
 
 /* NEW ARRIVAL/WEEKLY DEALS SECTION START */
-.product-image .view, .wishlist{
-    opacity: 0;
-}
 .product-image:hover .view, .wishlist{
     opacity: 1;
 }
@@ -169,7 +166,7 @@ body::-webkit-scrollbar{
     padding: 7px 16px;
     color: #000000;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 20px;/*  */
 
 }
 .product-image .wishlist{
@@ -489,6 +486,11 @@ body::-webkit-scrollbar{
         transform: translate(-35%, -50%);
     }
 }
+@media (max-width:1400px) {
+    .product-image .view, .wishlist{
+        font-size: .91rem;
+    }
+}
 @media (max-width: 1270px) {
     .carousel-inner .carousel-item .first-carousel{
         top: 50%;
@@ -730,6 +732,20 @@ body::-webkit-scrollbar{
     .product-image .image{
         height: 18rem;
     }
+    .product-details .p-text{
+        font-size: .899rem;
+    }
+    .product-details .price{
+        font-size: .989rem;
+    }
+}
+@media (max-width:471px) {
+    .product-image .view{
+    padding: 6px 11.8px
+    }
+    .product-image .wishlist{
+    padding: .38rem .65rem;
+    } 
 }
 @media (max-width:450px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -761,6 +777,21 @@ body::-webkit-scrollbar{
     .product-image .image{
         height: 16rem;
     }
+    .product-details .p-text{
+        font-size: .85rem;
+    }
+    .product-details .price{
+        font-size: .975rem;
+    }
+    .product-image .view, .wishlist i{
+        font-size: .8rem;
+    }
+    .product-image .view{
+        padding: 5px 8.8px
+    }
+    .product-image .wishlist{
+        padding: .28rem .58rem;
+    }
 }
 @media (max-width:420px) {
     .carousel-inner .carousel-item .third-carousel{
@@ -771,6 +802,9 @@ body::-webkit-scrollbar{
     }
 }
 @media (max-width:390px) {
+    .carousel-inner .carousel-item .first-carousel{
+        width: 11rem;
+    }
     .first-carousel, .second-carousel{
         width: 16rem;
     }
@@ -783,10 +817,19 @@ body::-webkit-scrollbar{
     .product-image .image{
         height: 14rem;
     }
+    .product-image .view, .wishlist i{
+        font-size: .7rem;
+    }
+    .product-image .view{
+        padding: 5px 8.8px
+    }
+    .product-image .wishlist{
+        padding: .2rem .55rem;
+    }
 }
 @media (max-width:375px) {
     .carousel-inner .carousel-item .first-carousel{
-        width: 14rem;
+        width: 9.5rem;
     }
     .carousel-inner .carousel-item .second-carousel{
         width: 12.5rem;
