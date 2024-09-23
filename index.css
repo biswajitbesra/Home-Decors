@@ -228,38 +228,25 @@ body::-webkit-scrollbar{
 /* NEW ARRIVAL/WEEKLY DEALS SECTION START */
 
 /* OFFER SECTION START */
-.cus-offer-size{
-    width: 30rem;
-    height: 30rem;
-    position: relative;
-}
-.cus-offer-size .image-1{
-    width: 35rem;
-}
-.cus-offer-size .image-1 img{
-    height: 100%;
-    width: 100%;
-}
-.cus-offer-size .image-2{
-    position: absolute;
-    top: 20%;
-    left: 40%;
-}
 .offer-div {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
+    font-size: 16px;
+}
+.offer-div h1{
+    font-size: 2.5em;
 }
 .offer-div .offer-p1-size, .offer-p2-size{
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 .offer-div .offer-p2-size{
-    font-size: 1.4rem;
+    font-size: 1.4em;
 }
 .offer-div .offer-sn-btn{
     border: .07rem solid black;
     padding: .3rem 1rem;
-    font-size: 1.03rem;
+    font-size: 1.03em;
     border-radius: .5rem;
     background-color: transparent;
     transition: all .3s ease-in-out;
@@ -515,6 +502,9 @@ body::-webkit-scrollbar{
     .card-size .card-info .dis-btn{
         font-size: calc(1.25rem - 20%);
     }
+    .offer-div{
+        font-size: 15px;
+    }
 }
 @media (max-width: 1160px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -542,6 +532,9 @@ body::-webkit-scrollbar{
     .first-para, .second-para, .third-para{
         font-size: 1rem;
     }
+    .offer-div{
+        font-size: 14px;
+    }
 }
 @media (max-width: 1080px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -563,6 +556,9 @@ body::-webkit-scrollbar{
     .first-para, .second-para, .third-para{
         font-size: 1rem;
     }
+    .offer-div{
+        font-size: 12.5px;
+    }
 }
 @media (max-width: 992px) {
     .first-carousel, .second-carousel{
@@ -580,6 +576,9 @@ body::-webkit-scrollbar{
     }
     .first-para, .second-para, .third-para{
         font-size: .9rem;
+    }
+    .offer-div{
+        font-size: 11px;
     }
 }
 @media (max-width: 880px) {
@@ -629,6 +628,9 @@ body::-webkit-scrollbar{
     .card-size .card-info .dis-btn{
         font-size: calc(1.25rem - 35%);
     }
+    .offer-div{
+        font-size: 10px;
+    }
 }
 @media (max-width:768px) {
     .dis-row{
@@ -637,6 +639,18 @@ body::-webkit-scrollbar{
     #custom-cards{
         padding-left: 0;
         padding-right: 0;
+    }
+    #offerId{
+        height: 15.9rem;
+    }
+    #offerId img{
+        height: 100%;
+        width:auto;
+        object-fit: cover;
+        object-position: 70%;
+    }
+    .offer-div{
+        font-size: 8.5px;
     }
 }
 @media (max-width: 750px) {
@@ -655,6 +669,9 @@ body::-webkit-scrollbar{
     .carousel-text .first-text, .second-text, .third-text{
         font-size: 2.3rem;
     }
+    .offer-div{
+        font-size: 8px;
+    }
 }
 @media (max-width: 700px) {
     .carousel-inner .carousel-item .second-carousel{
@@ -668,6 +685,9 @@ body::-webkit-scrollbar{
     }
     .card-size{
         width: 45%;
+    }
+    .offer-div{
+        font-size: 7.5px;
     }
 }
 @media (max-width:595px) {
@@ -717,6 +737,9 @@ body::-webkit-scrollbar{
         color: #000;
         font-size: 1.2rem;
         text-decoration: underline;
+    }
+    .offer-div{
+        font-size: 7px;
     }
 }
 @media (max-width:575px) {
