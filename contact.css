@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
     padding: 1.3rem 0;
     background-color: white;
 }
-.navbar .container-xxl .nav-logo span{
+.navbar .container-xxl .nav-logo span, .offcanvas-logo{
     padding: 0 .35rem;
     border-radius: .4rem;
     color: white;
@@ -48,43 +48,36 @@ body::-webkit-scrollbar{
 .contact {
     padding: 3rem 0;
 }
-
 .contact .heading {
     text-align: center;
 }
-
 .content-container {
     padding: 3rem 0;
     display: flex;
     justify-content: center;
 }
-
 .content-container .send-message,
 .address-detail {
     padding: 2rem;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    width: 30rem;
 }
-
 .content-container .send-message .message-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .content-container .send-message .message-form h3,
 .email-input,
 textarea {
     margin-bottom: .9rem;
 }
-
 .content-container .send-message .message-form h3 {
     font-size: 1.5rem;
 }
-
 .content-container .send-message .message-form .email-input,
 textarea{
     padding: 0 1rem;
@@ -94,41 +87,37 @@ textarea{
     background-color: #f4f4f4;
     font-size: .8rem;
 }
-
 .content-container .send-message .message-form .email-input{
     height: 2.5rem;
     width: 20rem;
 }
-
 .content-container .send-message .message-form textarea {
     padding-top: .5rem;
     height: 8rem;
     width: 20rem;
 }
-
 .content-container .send-message .message-form button {
     height: 2.5rem;
-    width: 100%;
+    width: 20rem;
     font-size: .9rem;
     color: white;
     border-radius: 2rem;
     background-color: black;
 }
 .address-detail .address, .number, .sale-support {
-    margin: 1.5rem 0;
+    margin: .5rem 0;
 }
 .address-detail span{
     font-size: 1.3rem;
 }
-
 .address-detail p{
     padding-top: .5rem;
     font-size: .9rem;
 }
-.address-detail .info-container .color-black{
+.address-detail .color-black{
     color: #000;
 }
-.address-detail .info-container .color-blue {
+.address-detail .color-blue {
     color: #5f9ac7;
 }
 /* CONTACT SECTION */
@@ -176,3 +165,41 @@ textarea{
     color: #ffffff;
 }
 /* FOOTER SECTION */
+
+@media (max-width:768px) {
+    .content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .address-detail{
+        display: block;
+    }
+}
+@media (max-width:500px) {
+    .content-container {
+        padding: 1.5rem 0;
+    }
+    .content-container .send-message,
+    .content-container .address-detail {
+        width: 100%;
+        padding: 1rem;
+    }
+    .content-container .send-message .message-form .email-input,
+    .content-container .send-message .message-form textarea,
+    .content-container .send-message .message-form button {
+        width: 100%;
+    }
+    .content-container .send-message .message-form .email-input,
+    .content-container .send-message .message-form textarea {
+        font-size: .7rem;
+    }
+    .content-container .send-message .message-form h3 {
+        font-size: 1.2rem;
+    }
+    .address-detail span {
+        font-size: 1.1rem;
+    }
+    .address-detail p {
+        font-size: .8rem;
+    }
+}

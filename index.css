@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
     position: absolute;
     top: 0;
 }
-.navbar .container-xxl .nav-logo span{
+.navbar .container-xxl .nav-logo span, .offcanvas-logo{
     padding: 0 .35rem;
     border-radius: .4rem;
     color: white;
@@ -119,8 +119,20 @@ body::-webkit-scrollbar{
 /* DISCOUNT END */
 
 /* NEW ARRIVAL/WEEKLY DEALS SECTION START */
-.product-image:hover .view, .wishlist{
-    opacity: 1;
+.product-image{
+    display: flex;
+    position: relative;
+}
+.product-image .image{
+    height: 19.5rem;
+    width: 100%;
+    border-radius: .5rem .5rem 0rem 0rem;
+    overflow: hidden;
+}
+.product-image .image img{
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease-in ;
 }
 .product-image .wishlist{
     border: none;
@@ -137,21 +149,6 @@ body::-webkit-scrollbar{
     top: .5rem;
     left: .5rem;
 }
-.product-image{
-    display: flex;
-    position: relative;
-}
-.product-image .image{
-    height: 19.5rem;
-    width: 100%;
-    border-radius: .5rem .5rem 0rem 0rem;
-    overflow: hidden;
-}
-.product-image .image img{
-    height: 100%;
-    width: 100%;
-    transition: all .3s ease-in ;
-}
 .product-image .view, .wishlist{
     position: absolute;
     bottom: 1.5rem;
@@ -160,13 +157,19 @@ body::-webkit-scrollbar{
     opacity: 0;
     background-color: #ffffff;
 }
+.product-image:hover .view{
+    opacity: 1;
+}
+.product-image:hover .wishlist{
+    opacity: 1;
+}
 .product-image .view{
     left: 50%;
     transform: translateX(-78%);
     padding: 7px 16px;
     color: #000000;
     text-decoration: none;
-    border-radius: 20px;/*  */
+    border-radius: 20px;
 
 }
 .product-image .wishlist{
@@ -174,9 +177,6 @@ body::-webkit-scrollbar{
     transform: translateX(220%);
     padding: .39rem .67rem;
     border-radius: 50%;
-}
-.product-image:hover .wishlist{
-    opacity: 1;
 }
 .product-image .wishlist:hover{
     color:#ffffff;
@@ -188,9 +188,6 @@ body::-webkit-scrollbar{
 .product-image .view:hover{
     color:#ffffff;
     background-color: red;
-}
-.product-image:hover .view{
-    opacity: 1;
 }
 .product-details{
     padding: .5rem;
@@ -265,12 +262,14 @@ body::-webkit-scrollbar{
     height: 30rem;
     width: 25rem;
 }
-
+.modal-body .row #cus-modal-sideimage{
+    flex-direction: column;
+    margin-right: 1.5rem;
+}
 #cus-modal-image #cus-modal-img {
     height: 100%;
     width: 100%;
 }
-
 .add-cart, .buy-now {
     width: 8rem;
     padding: .3rem 0;
@@ -286,8 +285,6 @@ body::-webkit-scrollbar{
     color: white;
     border: none;
 }
-
-
 .modal-fs{
     font-size: .9rem ;
 }
@@ -335,7 +332,6 @@ body::-webkit-scrollbar{
     object-fit: cover;
     border-radius: .3rem;
 }
-
 /* MODAL SECTION END */
 .custom-section {
     max-width: 1200px;
@@ -405,14 +401,16 @@ body::-webkit-scrollbar{
 
 /* INFORMATION SECTION START */
 .box {
-    width: 23%;
+    width: 100%;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     transition: all .3s ease-in-out;
+    /* border: 2px solid #000000; */
 }
 .box .info-sec-font {
     color: #666;
+    margin-bottom: 0;
 }
 .box:hover{
     box-shadow: 0 0 10px #dfdfdf;
@@ -513,6 +511,11 @@ body::-webkit-scrollbar{
         font-size: 15px;
     }
 }
+@media (max-width:1200px) {
+    #cus-modal-heading{
+        padding-top: 1rem;
+    }
+}
 @media (max-width: 1160px) {
     .carousel-inner .carousel-item .first-carousel{
         top: 50%;
@@ -589,6 +592,12 @@ body::-webkit-scrollbar{
     }
     .text-overlay{
         font-size: 14px;
+    }
+    .modal-body .row #cus-modal-sideimage{
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 0;
+        padding-top: 1rem;
     }
 }
 @media (max-width: 880px) {

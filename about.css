@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-
 }
 html{
     scroll-behavior: smooth;
@@ -19,7 +18,7 @@ body::-webkit-scrollbar{
     padding: 1.3rem 0;
     background-color: white;
 }
-.navbar .container-xxl .nav-logo span{
+.navbar .container-xxl .nav-logo span, .offcanvas-logo{
     padding: 0 .35rem;
     border-radius: .4rem;
     color: white;
@@ -119,3 +118,45 @@ body::-webkit-scrollbar{
     color: #ffffff;
 }
 /* FOOTER END */
+
+/* MEDIA QUERIES START */
+@media (max-width: 992px) {
+    .about .container-content {
+        padding: 3rem 3rem;
+    }
+    .about .container-content .border {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .container-content {
+        padding: 2rem 2rem;
+    }
+    .about .container-content .border {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        padding: 2rem 1rem;
+    }
+    .about .container-content {
+        padding: 1.5rem 1rem;
+    }
+    .about .container-content .border {
+        padding: 1rem;
+        width: 100%;
+    }
+    .about .heading {
+        font-size: 1.5rem;
+    }
+    .about .container-content .info-sec-font {
+        font-size: 0.875rem;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+}
+/* MEDIA QUERIES END */
