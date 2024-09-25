@@ -337,46 +337,59 @@ body::-webkit-scrollbar{
 }
 
 /* MODAL SECTION END */
-
-/* INVENTORY SECTION START */
+.custom-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.custom-image-container {
+    flex: 0 0 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .custom-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 320px;
-    width: 100%;
-    overflow: hidden;
     position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
 }
 .custom-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-.custom-image:hover img{
-    transform: scale(1.1);
-}
-.custom-image .text-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.46);
-    color: #ffffff;
-    padding: 1.25rem;
-    text-align: center;
-    z-index: 3;
-    opacity: 0;
-    transition: all 0.3s ease;
+    object-fit: cover;
+}
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    padding: 1rem;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+}
+.custom-image:hover .text-overlay {
+    opacity: 1;
+}
+.inventory-heading{
+    font-size: 2em;
+}
+.custom-text {
+    font-size: 1em;
 }
 .custom-image .text-overlay .inventory-view{
     border: .06rem solid white;
     color: #fff;
+    font-size: 1em;
     border-radius: .5rem;
     padding: .3rem .8rem;
     background-color: transparent;
@@ -387,10 +400,7 @@ body::-webkit-scrollbar{
     background-color: black;
     border: .06rem solid black;
 }
-  
-.custom-image:hover .text-overlay {
-    opacity: 1;
-}
+
 /* INVENTORY SECTION END */
 
 /* INFORMATION SECTION START */
@@ -577,6 +587,9 @@ body::-webkit-scrollbar{
     .offer-div{
         font-size: 11px;
     }
+    .text-overlay{
+        font-size: 14px;
+    }
 }
 @media (max-width: 880px) {
     #carouselExampleAutoplaying .carousel-inner .carousel-item{
@@ -649,6 +662,9 @@ body::-webkit-scrollbar{
     .offer-div{
         font-size: 8.5px;
     }
+    .text-overlay{
+        font-size: 12px;
+    }
 }
 @media (max-width: 750px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -685,6 +701,12 @@ body::-webkit-scrollbar{
     }
     .offer-div{
         font-size: 7.5px;
+    }
+    .text-overlay .inventory-heading{
+        margin-bottom: 0;
+    }
+    .text-overlay .custom-text{
+        margin-bottom: .5rem;
     }
 }
 @media (max-width:595px) {
@@ -738,6 +760,18 @@ body::-webkit-scrollbar{
     .offer-div{
         font-size: 7px;
     }
+    .custom-image-container {
+        flex: 0 0 100%;
+    }
+    .text-overlay{
+        font-size: 16px;
+    }
+    .text-overlay .inventory-heading{
+        margin-bottom: .5rem;
+    }
+    .text-overlay .custom-text{
+        margin-bottom: 1rem;
+    }
 }
 @media (max-width:575px) {
     .cus-container{
@@ -765,7 +799,10 @@ body::-webkit-scrollbar{
     }
     .product-image .wishlist{
     padding: .38rem .65rem;
-    } 
+    }
+    .text-overlay{
+        font-size: 14px;
+    }
 }
 @media (max-width:450px) {
     .carousel-inner .carousel-item .first-carousel{
@@ -845,6 +882,15 @@ body::-webkit-scrollbar{
     }
     .product-image .wishlist{
         padding: .2rem .55rem;
+    }
+    .text-overlay{
+        font-size: 12px;
+    }
+    .text-overlay .inventory-heading{
+        margin-bottom: 0;
+    }
+    .text-overlay .custom-text{
+        margin-bottom: .5rem;
     }
 }
 @media (max-width:375px) {
