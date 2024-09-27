@@ -314,6 +314,10 @@ body::-webkit-scrollbar{
     }
 }
 @media (max-width:992px) {
+    .navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .modal-body .row #cus-modal-sideimage{
         flex-direction: row;
         justify-content: center;
@@ -331,6 +335,9 @@ body::-webkit-scrollbar{
     }
 }
 @media (max-width:515px) {
+    .category-sec ul li{
+        font-size: .9rem;
+    }
     .row .product-wrap .product-image .image{
         height: 18rem;
     }
@@ -391,6 +398,12 @@ body::-webkit-scrollbar{
 @media (max-width:375px) {
     .row .product-wrap .product-image .image{
         height: 13rem;
+    }
+    .row .product-wrap .product-image .view{
+        padding: 4px 5px
+    }
+    .row .product-wrap .product-image .wishlist{
+        padding: .1rem .45rem;
     }
 }
 /*  <<<<<<<<<<< MEDIA QUERY END >>>>>>>>> */

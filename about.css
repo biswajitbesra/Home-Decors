@@ -121,6 +121,10 @@ body::-webkit-scrollbar{
 
 /* MEDIA QUERIES START */
 @media (max-width: 992px) {
+    .navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .about .container-content {
         padding: 3rem 3rem;
     }

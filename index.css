@@ -571,6 +571,10 @@ body::-webkit-scrollbar{
     }
 }
 @media (max-width: 992px) {
+    .navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .first-carousel, .second-carousel{
         width: 38rem;
     }
@@ -931,5 +935,11 @@ body::-webkit-scrollbar{
     }
     .product-image .image{
         height: 13rem;
+    }
+    .product-image .view{
+        padding: 4px 5px
+    }
+    .product-image .wishlist{
+        padding: .1rem .45rem;
     }
 }
